@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Vanilla Gallery</title>
+  </head>
+  <body>
+    <header>
+      <h1>Vanilla Gallery</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><button>Animals</button></li>
+        <li><button>Flowers</button></li>
+        <li><button>Objects</button></li>
+        <li><button>People</button></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div id="modal">
+        <button class="close-modal">×</button>
+        <img
+          class="modal-image"
+          src="https://collectionapi.metmuseum.org/api/collection/v1/iiif/437920/795809/main-image"
+          alt=""
+        />
+        <div class="modal-description">
+          <h3>A vase with Flowers</h3>
+          <p>probably 1613</p>
+          <p>Jacob Vosmaer</p>
+        </div>
+      </div>
+
+      <div id="animals-container">
+        <div class="preview"></div>
+        <div class="preview"></div>
+        <div class="preview"></div>
+        <div class="preview"></div>
+        <div class="preview"></div>
+        <div class="preview"></div>
+        <div class="preview"></div>
+        <div class="preview"></div>
+        <div class="preview"></div>
+        <div class="preview"></div>
+        <div class="preview"></div>
+        <div class="preview"></div>
+      </div>
+    </main>
+
+    <footer>
+      <p>All images are from www.metmuseum.org</p>
+    </footer>
+  </body>
+</html>
