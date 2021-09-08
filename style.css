@@ -1,0 +1,128 @@
+/* Google Fonts ----- */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/* General ----- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  background-color: #000000;
+  color: #edeade;
+}
+
+header,
+nav,
+main,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+button {
+  font-size: 16px;
+  padding: 12px 8px;
+  font-family: inherit;
+  color: #edeade;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+}
+
+button:hover {
+  opacity: 0.5;
+}
+
+/* Header ----- */
+header {
+  height: 160px;
+}
+
+/* Nav ----- */
+nav {
+  border-top: 1px solid #edeade;
+  border-bottom: 1px solid #edeade;
+}
+
+nav > ul {
+  width: 360px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Main ----- */
+
+/* Modal */
+#modal {
+  display: none;
+}
+
+/* Gallery */
+#animals-container {
+  width: 830px;
+  margin: 100px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+#animals-container .preview {
+  background-color: #edeade;
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+}
+
+#animals-container .preview:hover {
+  opacity: 0.5;
+}
+
+/* Footer ----- */
+footer {
+  padding: 12px 0;
+  border-top: 1px solid #edeade;
+}
+
+/* ----- Media Query ----- */
+@media only screen and (max-width: 1080px) and (min-width: 769px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  header {
+    height: 120px;
+  }
+
+  #animals-container {
+    width: 620px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+  header {
+    height: 100px;
+  }
+  #animals-container {
+    width: 410px;
+  }
+}
