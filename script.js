@@ -1,5 +1,9 @@
 const modal = document.querySelector("#modal");
 const modalCloseBtn = document.querySelector(".modal-close-btn");
+const modalImage = document.querySelector(".modal-image");
+const modalDescTitle = document.querySelector(".description-title");
+const modalDescDate = document.querySelector(".description-date");
+const modalDescArtist = document.querySelector(".description-artist");
 const previewContainer = document.querySelector('.preview-container');
 const stillLifesBtn = document.querySelector('#stilllifes-btn');
 const landscapesBtn = document.querySelector('#landscapes-btn');
@@ -25,6 +29,11 @@ async function createPreviews(id) {
     // add event listener to the div
     elDiv.addEventListener("click", function () {
       modal.style.display = "block";
+      // pass data to the modal
+      modalImage.style.backgroundImage = `url("${data.primaryImageSmall}")`;
+      modalDescTitle.textContent = data.title;
+      modalDescDate.textContent = data.objectDate;
+      modalDescArtist.textContent = data.artistDisplayName;
     });
     // append the div to the container
     previewContainer.append(elDiv);
